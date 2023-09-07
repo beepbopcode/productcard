@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project 👏</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            fontFamily: {
+              sans: ['Montserrat', 'sans'],
+              serif: ['Fraunces', 'serif'],
+            },
+            extend: {
+              colors: {
+                darkcyan: 'hsl(158, 36%, 37%)',
+                cream: 'hsl(30, 38%, 92%)',
+                verydarkblue: 'hsl(212, 21%, 14%)',
+                darkgrayishblue: 'hsl(228, 12%, 48%)',
+                white: 'hsl(0, 0%, 100%)',
+              },
+            },
+          },
+        };
+      </script>
+
+    <link href="/build/output.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/images/favicon-32x32.png">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet" />
+    
+</head>
+
+
+
+<body>
+    <body>
+        <!-- Arkaplan -->
+        <div class="flex justify-center min-h-screen items-center bg-cream">
+          <!-- Container -->
+          <div class="flex flex-col justify-center w-[350px] mt-12 rounded-lg md:w-[1440px] md:flex-row">
+            <!-- Resim -->
+            <div>
+              <img
+                src="images/image-product-desktop.jpg"
+                alt="desktop"
+                class="rounded-l-xl max-w-[325px] h-[290px] hidden md:block md:h-[450px] md:w-[295px]"
+              />
+            </div>
+            <!-- İçerik -->
+            <div
+              class="flex flex-col justify-left bg-white rounded-b-lg p-6 md:p-7 w-[350px] md:max-w-[305px] md:rounded-l-none md:rounded-r-lg"
+            >
+              <h3
+                class="uppercase tracking-[6px] font-sans text-xs font-medium text-darkgrayishblue pb-3 md:pb-4 md:text-[12px]"
+              >
+                Perfume
+              </h3>
+              <h1 class="text-3xl font-serif text-verydarkblue pb-4 leading-8 md:pb-4 md:mr-5">
+                Gabrielle Essence Eau De Parfum
+              </h1>
+              <p
+                class="font-sans text-darkgrayishblue text-[14px] pb-4 tracking-wider leading-6 md:pb-7 md:tracking-normal md:text-[14px] md:leading-[24px]"
+              >
+                A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the
+                House of CHANEL.
+              </p>
+              <!-- Fiyat -->
+              <div class="flex flex-row justify-left items-center space-x-4 pb-3 md:pb-5">
+                <h1 class="font-serif text-[32px] font-bold text-darkcyan md:text-[30px]">$149.99</h1>
+                <p class="font-sans text-xs line-through text-darkgrayishblue">$169.99</p>
+              </div>
+              <!-- Buton -->
+              <button
+                class="flex flex-row justify-center w-full rounded-md items-center space-x-3 bg-darkcyan p-[14px] hover:bg-verydarkblue hover:cursor-pointer md:p-3"
+              >
+                <img src="images/icon-cart.svg" alt="Cart icon" />
+                <h3 class="font-semibold text-sm text-white">Add to Cart</h3>
+              </button>
+            </div>
+          </div>
+        </div>
+      </body>
+    </html>
+</html>
